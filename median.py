@@ -9,5 +9,11 @@ while True:
         print("Some input could not be converted to a number!")
     else:
         break
-numbers.sort();
-print((numbers[len(numbers)//2] + numbers[len(numbers)//2 -1]) / 2)
+numbers.sort()
+if len(numbers) % 2 != 0:
+    print(numbers[len(numbers)//2])
+else:
+    a = numbers[len(numbers)//2]
+    b = numbers[len(numbers)//2 - 1]
+    c = (a + b)/2
+    print(c)
